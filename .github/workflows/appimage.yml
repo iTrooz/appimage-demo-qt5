@@ -16,7 +16,7 @@ jobs:
       - name: install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y qt5-default qtdeclarative5-dev cmake
+          sudo apt-get install -y qt5-default qtdeclarative5-dev cmake squashfs-tools
       - name: configure
         run: cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
       - name: build
